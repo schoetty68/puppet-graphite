@@ -14,7 +14,7 @@ class graphite::config_apache inherits graphite::params {
 
   package {
     $::graphite::params::apache_pkg:
-      ensure => installed;
+      ensure => installed,
   }
 
   package {
