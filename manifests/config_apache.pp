@@ -12,10 +12,10 @@ class graphite::config_apache inherits graphite::params {
 
   # we need an apache with python support
 
-  package {
-    $::graphite::params::apache_pkg:
-      ensure => installed,
-  }
+ # package {
+ #   $::graphite::params::apache_pkg:
+ #     ensure => installed,
+ # }
 
   package {
     $::graphite::params::apache_wsgi_pkg:
